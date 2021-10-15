@@ -1,0 +1,9 @@
+name: OvBot
+version: '${project.version}'
+main: com.oveln.ovbot.Main
+api-version: 1.17
+authors: [ Oveln ]
+description: 服务器机器人
+website: oveln.com
+depend:
+  - MiraiMC
