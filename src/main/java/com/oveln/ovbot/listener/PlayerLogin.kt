@@ -10,7 +10,10 @@ class PlayerLogin: Listener {
     @EventHandler
     fun onListened(event: AsyncPlayerPreLoginEvent) {
         if (!Data.whitelist.containsValue(event.name)) {
-            event.disallow(AsyncPlayerPreLoginEvent.Result.KICK_WHITELIST,Config.KickMessage)
+            event.disallow(
+                AsyncPlayerPreLoginEvent.Result.KICK_WHITELIST,
+                Config.KickMessages.GetMessage()
+            )
         }
     }
 }
